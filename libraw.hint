@@ -1,0 +1,4 @@
+category: Graphics
+sdesc: "RAW file library (sources)"
+ldesc: "LibRaw is a library for reading RAW files obtained from digital 
+photo cameras (CRW/CR2, NEF, RAF, DNG, and others)."

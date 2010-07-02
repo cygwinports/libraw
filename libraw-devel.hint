@@ -1,0 +1,6 @@
+category: Graphics
+requires:
+external-source: libraw
+sdesc: "RAW file library (development)"
+ldesc: "LibRaw is a library for reading RAW files obtained from digital 
+photo cameras (CRW/CR2, NEF, RAF, DNG, and others)."
