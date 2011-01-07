@@ -1,0 +1,12 @@
+ORIG_PN="LibRaw"
+
+DESCRIPTION="RAW file library"
+HOMEPAGE="http://www.libraw.org/"
+SRC_URI="http://www.libraw.org/data/${ORIG_PN}-${PV}.tar.gz"
+
+PKG_NAMES="${PN}-devel"
+libraw_devel_CONTENTS="usr/"
+
+CYGCONF_ARGS="--disable-examples"
+
+DOCS="LICENSE.* README.*"

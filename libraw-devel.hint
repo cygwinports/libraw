@@ -1,5 +1,5 @@
 category: Graphics
-requires:
+requires: liblcms-devel
 external-source: libraw
 sdesc: "RAW file library (development)"
 ldesc: "LibRaw is a library for reading RAW files obtained from digital 
