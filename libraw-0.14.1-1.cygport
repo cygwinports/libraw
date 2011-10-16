@@ -2,10 +2,13 @@ ORIG_PN="LibRaw"
 
 DESCRIPTION="RAW file library"
 HOMEPAGE="http://www.libraw.org/"
-SRC_URI="http://www.libraw.org/data/${ORIG_PN}-${PV}.tar.gz"
+SRC_URI="http://www.libraw.org/data/${ORIG_PN}-${PV}.tar.gz
+	 http://www.libraw.org/data/${ORIG_PN}-demosaic-pack-GPL2-${PV}.tar.gz
+	 http://www.libraw.org/data/${ORIG_PN}-demosaic-pack-GPL3-${PV}.tar.gz"
+PATCH_URI="0.14.1-demosaic-vpath.patch"
 
-PKG_NAMES="libraw2 libraw-devel"
-libraw2_CONTENTS="usr/bin/*-2.dll"
+PKG_NAMES="libraw5 libraw-devel"
+libraw5_CONTENTS="usr/bin/*-5.dll"
 libraw_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
 
 CYGCONF_ARGS="--disable-examples"

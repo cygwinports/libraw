@@ -1,5 +1,5 @@
 category: Graphics
-requires: libgcc1 libgomp1 liblcms1 libstdc++6
+requires: libgcc1 libgomp1 libjasper1 liblcms2_2 libstdc++6
 external-source: libraw
 sdesc: "RAW file library (development)"
 ldesc: "LibRaw is a library for reading RAW files obtained from digital 
