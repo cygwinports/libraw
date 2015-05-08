@@ -1,7 +1,7 @@
 ORIG_PN="LibRaw"
 
 NAME="libraw"
-VERSION=0.15.3
+VERSION=0.16.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="RAW file library"
@@ -13,8 +13,8 @@ SRC_URI="http://www.libraw.org/data/LibRaw-${VERSION}.tar.gz
 	 http://www.libraw.org/data/LibRaw-demosaic-pack-GPL3-${VERSION}.tar.gz"
 PATCH_URI="0.14.1-demosaic-vpath.patch"
 
-PKG_NAMES="libraw9 libraw-devel"
-libraw9_CONTENTS="usr/bin/*-9.dll"
+PKG_NAMES="libraw10 libraw-devel"
+libraw10_CONTENTS="usr/bin/*-10.dll"
 libraw_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
 
 # put demosaic packs under $S for debuginfo
