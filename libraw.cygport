@@ -1,7 +1,7 @@
 ORIG_PN="LibRaw"
 
 NAME="libraw"
-VERSION=0.16.0
+VERSION=0.16.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="RAW file library"
