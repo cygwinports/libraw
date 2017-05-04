@@ -1,8 +1,6 @@
-ORIG_PN="LibRaw"
-
 NAME="libraw"
-VERSION=0.16.2
-RELEASE=2
+VERSION=0.18.2
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="RAW file library"
 DESCRIPTION="LibRaw is a library for reading RAW files obtained from digital
@@ -11,13 +9,15 @@ HOMEPAGE="http://www.libraw.org/"
 SRC_URI="http://www.libraw.org/data/LibRaw-${VERSION}.tar.gz
 	 http://www.libraw.org/data/LibRaw-demosaic-pack-GPL2-${VERSION}.tar.gz
 	 http://www.libraw.org/data/LibRaw-demosaic-pack-GPL3-${VERSION}.tar.gz"
+SRC_DIR="LibRaw-${VERSION}"
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/rpms/LibRaw.git/plain/LibRaw-0.16.2-CVE-2015-8366-8367.patch?h=f23
+	http://pkgs.fedoraproject.org/cgit/rpms/LibRaw.git/plain/LibRaw-0.6.0-pkgconfig.patch
+	http://pkgs.fedoraproject.org/cgit/rpms/LibRaw.git/plain/LibRaw-0.17.1-CVE-2015-8366-8367.patch
 	0.14.1-demosaic-vpath.patch
 "
 
-PKG_NAMES="libraw10 libraw-devel"
-libraw10_CONTENTS="usr/bin/*-10.dll"
+PKG_NAMES="libraw16 libraw-devel"
+libraw16_CONTENTS="usr/bin/*-16.dll"
 libraw_devel_CONTENTS="usr/include/ usr/lib/ usr/share/"
 
 # put demosaic packs under $S for debuginfo
@@ -34,5 +34,3 @@ CYGCONF_ARGS="--disable-examples"
 LIBS="-lgomp"
 
 DOCS="LICENSE.* README.*"
-
-KEEP_LA_FILES="none"
